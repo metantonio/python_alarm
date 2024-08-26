@@ -4,10 +4,10 @@ import winsound  # Solo para Windows
 import os       # Para sistemas Unix/Linux/Mac
 
 # Configuración de la alarma
-intervalo_segundos = 5  # Intervalo de tiempo en segundos entre cada alarma
-repeticiones = 5         # Número de veces que se repetirá la alarma
+intervalo_segundos = 3600  # Intervalo de tiempo en segundos entre cada alarma
+repeticiones = 4         # Número de veces que se repetirá la alarma
 # Configurar la hora de la alarma (24 horas, formato HH:MM:SS)
-hora_objetivo = datetime.time(11, 47, 40)  # 14:30:00 (2:30 PM)
+hora_objetivo = datetime.time(12, 19, 0)  # 14:30:00 (2:30 PM)
 
 
 def alarma(intervalo, repeticiones):
