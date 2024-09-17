@@ -5,9 +5,9 @@ import os       # Para sistemas Unix/Linux/Mac
 
 # Configuración de la alarma
 intervalo_segundos = 3600  # Intervalo de tiempo en segundos entre cada alarma
-repeticiones = 1         # Número de veces que se repetirá la alarma
+repeticiones = 9         # Número de veces que se repetirá la alarma
 # Configurar la hora de la alarma (24 horas, formato HH:MM:SS)
-hora_objetivo = datetime.time(16, 20, 0)  # 14:30:00 (2:30 PM)
+hora_objetivo = datetime.time(9, 5, 00)  # 14:30:00 (2:30 PM)
 
 
 def alarma(intervalo, repeticiones):
@@ -22,7 +22,7 @@ def alarma(intervalo, repeticiones):
 def reproducir_sonido():
     # Windows
     try:
-        winsound.Beep(1000, 1000)  # Frecuencia 1000 Hz, duración 1000 ms
+        winsound.Beep(1000, 2000)  # Frecuencia 1000 Hz, duración 1000 ms
     except:
         pass
 
