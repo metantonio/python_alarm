@@ -1,0 +1,1 @@
+pyinstaller --onefile --log-level=DEBUG ./ui2.py
